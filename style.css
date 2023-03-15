@@ -108,7 +108,6 @@ li {
   max-width: 100%;
   width: 51.315rem;
   position: relative;
-
   background-repeat: no-repeat;
 }
 
@@ -171,10 +170,49 @@ a {
   text-decoration: none;
   color: #a9a9a9;
 }
+.hamburgerMenu {
+  display: none;
+}
+
+#men {
+  display: none;
+}
 
 @media screen and (max-width: 600px) {
   body {
     margin: 20px;
+  }
+  .hamburgerMenu {
+    display: flex;
+  }
+  #hamMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 45;
+    height: 100vh;
+
+    width: 100%;
+  }
+  #hamMenu > .home {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 3px;
+  }
+  #hamMenu > a {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: var(--montserrat);
+    font-weight: 700;
+    font-size: 18px;
+    column-gap: 50px;
+    padding: 0;
+  }
+  #hamMenu > a:hover {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 5px;
+    cursor: pointer;
+    transition: ease-in;
   }
   .navWrapper > .navMenu {
     display: none;
@@ -219,5 +257,8 @@ a {
   }
   .courtesy > p {
     font-size: 1.125rem;
+  }
+  footer > .footerWrapper > p {
+    font-size: 10px;
   }
 }
