@@ -181,6 +181,9 @@ a {
   .hamburgerMenu {
     display: flex;
   }
+  .hamburgerMenu > i {
+    font-size: 30px;
+  }
   #hamMenu {
     display: flex;
     flex-direction: column;
