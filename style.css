@@ -176,7 +176,9 @@ a {
 #hamMenu {
   display: none;
 }
-
+#hamMenu > a {
+  display: none;
+}
 @media screen and (max-width: 600px) {
   body {
     margin: 20px;
