@@ -48,6 +48,7 @@ body {
   font-family: var(--crimson);
   font-size: 14px;
   font-weight: var(--sm200);
+  cursor: pointer;
 }
 
 .navMenu > ul {
@@ -90,9 +91,6 @@ li {
   color: #ffffff;
 }
 
-.content > a:hover {
-  transform: translateY(5);
-}
 .description {
   font-size: 1.2rem;
   font-weight: 400;
@@ -105,15 +103,17 @@ li {
 .heroImgContainer {
   background-image: url(./photo1.png);
   background-size: 100%;
-  height: 31.75rem;
-  width: 100%;
-  max-width: 51.315rem;
+  height: 31rem;
+  max-height: 100%;
+  max-width: 100%;
+  width: 51.315rem;
   position: relative;
-  flex: 55%;
+
+  background-repeat: no-repeat;
 }
 
 .profileCard {
-  width: 410px;
+  width: 25.625rem;
   background-color: #181719;
   position: absolute;
   bottom: -100px;
@@ -122,8 +122,8 @@ li {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 .profileHeader > img {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   border-radius: 50%;
 }
 .profileHeader {
@@ -153,4 +153,71 @@ li {
   font-weight: 500;
   margin-top: 20px;
   text-align: left;
+}
+footer > .footerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+footer > .footerWrapper > p {
+  color: #a9a9a9;
+  font-size: 14px;
+  font-family: var(--montserrat);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #a9a9a9;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 20px;
+  }
+  .navWrapper > .navMenu {
+    display: none;
+  }
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .wrapper > .content > h1 {
+    font-size: 2.5rem;
+  }
+  .heroImgContainer {
+    display: flex;
+    height: 279px;
+    width: 390px;
+    margin-top: 40px;
+  }
+  .content {
+    padding: 0;
+  }
+  .description {
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    padding: 0 150px 0 0;
+    margin-top: 20px;
+  }
+  .profileCard {
+    height: 8.625rem;
+    width: 18.75rem;
+    padding: 20px;
+  }
+  .profileHeader > .imgHouse {
+    height: 40px;
+    width: 40px;
+  }
+  .name > h2 {
+    font-size: 0.75rem;
+  }
+  .name > h3 {
+    font-size: 0.625rem;
+  }
+  .courtesy > p {
+    font-size: 1.125rem;
+  }
 }
