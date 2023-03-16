@@ -189,6 +189,9 @@ a {
   .hamburgerMenu > i {
     font-size: 30px;
   }
+  main {
+    position: relative;
+  }
   #hamMenu {
     display: none;
     flex-direction: column;
@@ -198,6 +201,7 @@ a {
     height: 100vh;
     width: 100%;
     background-color: black;
+    position: absolute;
   }
   #hamMenu > .home {
     border-bottom: 2px solid #ffffff;
