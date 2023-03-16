@@ -197,6 +197,7 @@ a {
     z-index: 45;
     height: 100vh;
     width: 100%;
+    background-color: black;
   }
   #hamMenu > .home {
     border-bottom: 2px solid #ffffff;
