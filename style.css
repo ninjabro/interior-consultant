@@ -226,6 +226,7 @@ a {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    margin-top: 20px;
   }
   .wrapper > .content > h1 {
     font-size: 2.5rem;
